@@ -53,11 +53,6 @@
                 <artifactId>peel-wordcount-flink-jobs</artifactId>
                 <version>${project.version}</version>
             </dependency>
-            <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>peel-wordcount-spark-jobs</artifactId>
-                <version>${project.version}</version>
-            </dependency>
 
             <!-- Peel -->
             <dependency>
@@ -171,11 +166,10 @@
         </pluginManagement>
     </build>
 
-  <modules>
-    <module>peel-wordcount-bundle</module>
-    <module>peel-wordcount-peelextensions</module>
-    <module>peel-wordcount-datagens</module>
-    <module>peel-wordcount-flink-jobs</module>
-    <module>peel-wordcount-spark-jobs</module>
-  </modules>
+    <modules>
+        <module>peel-wordcount-bundle</module>
+        <module>peel-wordcount-peelextensions</module>
+        <module>peel-wordcount-datagens</module>
+        <module>peel-wordcount-flink-jobs</module>
+    </modules>
 </project>
