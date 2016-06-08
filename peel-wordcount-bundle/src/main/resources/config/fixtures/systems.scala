@@ -32,9 +32,9 @@ class systems extends ApplicationContextAware {
     mc           = ctx.getBean(classOf[Mustache.Compiler])
   )
 
-  @Bean(name = Array("spark-1.4.0"))
-  def `spark-1.4.0`: Spark = new Spark(
-    version      = "1.4.0",
+  @Bean(name = Array("spark-1.6.0"))
+  def `spark-1.6.0`: Spark = new Spark(
+    version      = "1.6.0",
     configKey    = "spark",
     lifespan     = Lifespan.EXPERIMENT,
     dependencies = Set(ctx.getBean("hdfs-2.7.1", classOf[HDFS2])),

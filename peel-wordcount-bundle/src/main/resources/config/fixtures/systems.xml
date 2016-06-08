@@ -27,9 +27,9 @@
         </constructor-arg>
     </bean>
 
-    <!-- Spark (overridden 'spark-1.4.0' bean that depends on 'hdfs-2.7.1') -->
-    <bean id="spark-1.4.0" class="org.peelframework.spark.beans.system.Spark" parent="system">
-        <constructor-arg name="version" value="1.4.0"/>
+    <!-- Spark (overridden 'spark-1.6.0' bean that depends on 'hdfs-2.7.1') -->
+    <bean id="spark-1.6.0" class="org.peelframework.spark.beans.system.Spark" parent="system">
+        <constructor-arg name="version" value="1.6.0"/>
         <constructor-arg name="configKey" value="spark" />
         <constructor-arg name="lifespan" value="EXPERIMENT"/>
         <constructor-arg name="dependencies">
@@ -48,8 +48,8 @@
         <constructor-arg name="runs" value="3"/>
     </bean>
 
-    <bean id="experiment.spark-1.4.0" class="org.peelframework.spark.beans.experiment.SparkExperiment" abstract="true">
-        <constructor-arg name="runner" ref="spark-1.4.0"/>
+    <bean id="experiment.spark-1.6.0" class="org.peelframework.spark.beans.experiment.SparkExperiment" abstract="true">
+        <constructor-arg name="runner" ref="spark-1.6.0"/>
         <constructor-arg name="runs" value="3"/>
     </bean>
 

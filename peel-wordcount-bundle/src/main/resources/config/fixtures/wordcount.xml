@@ -67,7 +67,7 @@
     </bean>
 
     <!-- wordcount experiment (spark) -->
-    <bean id="experiment.spark.wordcount" parent="experiment.spark-1.4.0" abstract="true">
+    <bean id="experiment.spark.wordcount" parent="experiment.spark-1.6.0" abstract="true">
         <constructor-arg name="command">
             <value><![CDATA[
               --class org.peelframework.wordcount.spark.SparkWC                    \
